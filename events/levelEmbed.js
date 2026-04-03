@@ -102,7 +102,8 @@ module.exports = {
       .setFooter({
         text: "MMUCraft Discord",
         iconURL: "https://images-ext-1.discordapp.net/external/WtkqHMdnLHEjSElPSXl-ByvwPLrYRMdwh5GPHkUjQvw/%3Fsize%3D96/https/cdn.discordapp.com/emojis/1415316601976393788.webp?format=png",
-      });    .setTimestamp();
-      message.channel.send({ embeds : [embed] });
+      })
+      .setTimestamp();
+        message.channel.send({ embeds : [embed] });
   }
 };
