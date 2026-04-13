@@ -2,9 +2,9 @@
   <img alt="MMUCraft" src="https://cdn.discordapp.com/icons/1415012956038627541/94adaecc79816ea165fc75936c9c5181.webp?size=1024" height ="100" width="100"></img>
   <br />
   <img alt="Bob" src="https://cdn.discordapp.com/avatars/1416043684360622180/4238a5462d6adb241da8cc36d6218fc3.webp?size=1024" height="250" width="250"></img>
-  <h2 align="center">Bob</h2>
+  <h2 align="center">Alice</h2>
   <h3 align="center">A discord.js Bot, tailor-made for MMUCraft Discord</h3>
-  <img alt="MMUCraft" src="https://cdn.discordapp.com/attachments/1448721985155891343/1449058526365483008/BannerCommish_20251212232034.png?ex=6988a9ea&is=6987586a&hm=777362495549594fa2c9f5141404a0c2f85d1aab6cdabdeb9221f28313bf9165&=&format=webp&quality=lossless&width=1604&height=902" height ="1080" width="1920"></img>
+  <img alt="MMUCraft" src="https://cdn.discordapp.com/attachments/1415013676749946885/1493280107446665559/image.png?ex=69de64f9&is=69dd1379&hm=dbefbe642f2325112c3184e96b043e727b178ee97b1af35ce8f096f1e10646b9&" height ="1080" width="1920"></img>
   <br />
 </div>
 
@@ -27,13 +27,13 @@ Then, download these dependencies.
 - `image-size` (v2.0.2+)
 - `jimp` (v1.6.0+)
 ```bash
-$ npm i discord.js discord-api-types @discordjs/rest captcha-canvas dotenv axios canvas gif-encoder-2 gif-frames image-size jimp
+$ npm install discord.js@14.22.1 discord-api-types@0.38.26 @discordjs/rest@2.6.0 captcha-canvas@3.3.4 dotenv@17.2.2 axios@1.13.2 canvas@3.2.0 gif-encoder-2@1.0.5 gif-frames@1.0.1 image-size@2.0.2 jimp@1.6.0
 ```
 
 Next, rename `.env_examples` to `.env` and make sure to insert the credentials.
 - 
 
-Lastly, run Bob!
+Lastly, run Alice!
 ```bash
 $ node .
 ```
