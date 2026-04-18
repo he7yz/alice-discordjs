@@ -37,14 +37,13 @@ module.exports = {
         if (!replyChannel) return;
 
         try {
-            await replyChannel.send('Alice dont want to hear from you right now');
             await replyChannel.sendTyping();
             const reply = await ollama.chat(MODEL, message.content);
             await replyChannel.send(reply.slice(0, 2000));
         }
         catch (err) {
             console.error('[Ollama] Error:'. err.message);
-            await interaction.editReply('Alice dont want to hear from you right now');
+            await interaction.editReply('Alice is not able to think right now');
         }
     }
 };

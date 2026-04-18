@@ -92,6 +92,7 @@ client.on("messageCreate", async (message) => {
     autoDeleterHandler.execute(message);
   }
   
+  await require('./events/ollamaChat.js').onMessage(message);
   await askCommand.onMessage(message);
 
   const command = messageCommands.get(message.content);
