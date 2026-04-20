@@ -4,6 +4,7 @@ const Discord = require("discord.js");
 const fs = require('fs');
 const path = require('path');
 const Welcomer = require('./events/welcomer.js');
+const askCommand = require('./commands/ask.js');
 
 const client = new Discord.Client({intents: [
   Discord.GatewayIntentBits.Guilds,
@@ -84,13 +85,15 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-client.on("messageCreate", (message) => {
+client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
   if (autoDeleterHandler) {
     autoDeleterHandler.execute(message);
   }
   
+  await askCommand.onMessage(message);
+
   const command = messageCommands.get(message.content);
   if (command) {
     try {

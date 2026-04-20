@@ -7,7 +7,7 @@ const { Routes } = require('discord-api-types/v10');
 
 module.exports = (client) => {
 
-    console.log('Started refreshing Bob (/) commands.');
+    console.log('Started refreshing Alice (/) commands.');
     // console.log(process.env.BOB_ID) check if called correctly
 
     const commands = [];
@@ -26,7 +26,7 @@ module.exports = (client) => {
             { body: commands },
         );
     
-        console.log('Successfully reloaded Bob (/) commands.');
+        console.log('Successfully reloaded Alice (/) commands.');
     } catch (error) {
         console.log(error);
     }
