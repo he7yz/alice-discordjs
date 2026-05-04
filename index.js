@@ -134,4 +134,4 @@ client.on('guildMemberRemove', (member) => {
   discordRPCstatus();
 });
 
-client.login(process.env.BOB_TOKEN);
+client.login(process.env.ALICE_TOKEN);

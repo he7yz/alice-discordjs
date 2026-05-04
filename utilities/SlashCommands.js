@@ -7,8 +7,8 @@ const { Routes } = require('discord-api-types/v10');
 
 module.exports = (client) => {
 
-    console.log('Started refreshing Bob (/) commands.');
-    // console.log(process.env.BOB_ID) check if called correctly
+    console.log('Started refreshing Alice (/) commands.');
+    // console.log(process.env.ALICE_ID) check if called correctly
 
     const commands = [];
     for (const [_, command] of client.commands) {
@@ -19,10 +19,10 @@ module.exports = (client) => {
         }
     }
 
-    const rest = new REST({ version: '10' }).setToken(process.env.BOB_TOKEN);
+    const rest = new REST({ version: '10' }).setToken(process.env.ALICE_TOKEN);
     try {
         rest.put(
-            Routes.applicationCommands(process.env.BOB_ID),
+            Routes.applicationCommands(process.env.ALICE_ID),
             { body: commands },
         );
     

@@ -8,6 +8,15 @@
   <br />
 </div>
 
+# Features
+- Latency Ping
+- Welcomer
+- Captcha Verification Layer
+- Auto Delete
+- Auto Thread & React for #Art Channel
+- Custom Embed Messages (Hardcoded)
+- AI Chatbot (powered by Ollama)
+
 # Installation
 Requires `npm` and `node.js` (v22.19.0 LTS) for installation.
 ```bash
@@ -30,8 +39,21 @@ Then, download these dependencies.
 $ npm install discord.js@14.22.1 discord-api-types@0.38.26 @discordjs/rest@2.6.0 captcha-canvas@3.3.4 dotenv@17.2.2 axios@1.13.2 canvas@3.2.0 gif-encoder-2@1.0.5 gif-frames@1.0.1 image-size@2.0.2 jimp@1.6.0
 ```
 
+Install Ollama
+-
+
+For Windows, paste this in PowerShell
+```powershell
+irm https://ollama.com/install.ps1 | iex
+```
+
+For Linux, paste this in your Terminal
+```bash
+$ curl -fsSL https://ollama.com/install.sh | sh
+```
+
 Next, rename `.env_examples` to `.env` and make sure to insert the credentials.
-- 
+-
 
 Lastly, run Alice!
 ```bash
