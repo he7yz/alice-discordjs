@@ -52,10 +52,22 @@ For Linux, paste this in your Terminal
 $ curl -fsSL https://ollama.com/install.sh | sh
 ```
 
+After that, make sure to pull an LLM model from Ollama
+```bash
+$ ollama pull llama3
+```
+
+Verify if it's running properly
+```bash
+$ ollama serve
+```
+
+_Keep in mind, only run these for first-time installation~_
+
 Next, rename `.env_examples` to `.env` and make sure to insert the credentials.
 -
 
-Lastly, run Alice!
+Lastly, wake up Alice!
 ```bash
 $ node .
 ```
