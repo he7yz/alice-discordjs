@@ -26,7 +26,7 @@ module.exports = (client) => {
             { body: commands },
         );
     
-        console.log('Successfully reloaded Bob (/) commands.');
+        console.log('Successfully reloaded Alice (/) commands.');
     } catch (error) {
         console.log(error);
     }
