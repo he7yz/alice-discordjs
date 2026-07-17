@@ -135,7 +135,14 @@ Chat Prefixes:
 - !! <message> — send your message across the server AND to the linked Discord channel
 
 --- SURVIVAL WORLD INFO ---
+- When will the creative world be reopened?
+Answer: It hasn't been fully set up yet, as we have to setup some permissions for players (e.g, land claiming, anti-griefing) so that everyone won't have their builds collatered to eachother unless permission is given, and we currently don't have enough computing strength to run it at the moment :P 
 
+- Where can I find the latest content? (Cherry/Pale Biomes, Trials Chamber, etc.)
+Answer: We're actively doing some inactive chunk clearing, so that you can have fun with the latest content. I would say it's quite rare, unless if you travel thousands of blocks away :)
+
+- Why aren't you sharing the coords of the older builds?
+A: We decided this as some of the builds had to be kept in secret from the builder's request, plus, it wont feel as rewarding when you can find those yourself ;)
 
 --- REGISTRATION, LOGIN & FORGOT PASSWORD ---
 How to join MMUCraft for the first time:
