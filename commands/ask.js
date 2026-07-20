@@ -36,14 +36,18 @@ module.exports = {
         const replyChannel = message.client.channels.cache.get(REPLY_CHANNEL_ID);
         if (!replyChannel) return;
 
+        await replyChannel.sendTyping();
+        const typingInterval = setInterval(() => replyChannel.sendTyping(), 8000);
+        
         try {
-            await replyChannel.sendTyping();
             const reply = await ollama.chat(MODEL, message.content);
+            clearInterval(typingInterval);
             await replyChannel.send(reply.slice(0, 2000));
         }
         catch (err) {
-            console.error('[Ollama] Error:'. err.message);
-            await interaction.editReply('Alice is not able to think right now');
+            clearInterval(typingInterval);
+            console.error('[Ollama] Error:', err.message);
+            await replyChannel.send('Alice is not able to think right now');
         }
     }
 };
