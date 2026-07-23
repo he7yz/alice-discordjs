@@ -19,11 +19,15 @@ module.exports = {
         const prompt = interaction.options.getString('prompt');
         await interaction.deferReply();
 
+        const typingInterval = setInterval(() => interaction.channel.sendTyping(), 8000);
+
         try {
             const reply = await ollama.chat(MODEL, prompt);
+            clearInterval(typingInterval);
             await interaction.editReply(reply.slice(0, 2000));
         }
         catch (err) {
+            clearInterval(typingInterval);
             console.error('[Ollama] Error:', err.message);
             await interaction.editReply('Alice is broken lol.');
         }
