@@ -3,7 +3,7 @@
     "@discordjs/rest": "^2.6.3",
     "axios": "^1.18.0",
     "canvas": "^3.2.0",
-    "captcha-canvas": "^3.3.4",
+    "captcha-canvas": "^3.4.0",
     "discord-api-types": "^0.38.26",
     "discord.js": "^14.27.0",
     "dotenv": "^17.2.2",
