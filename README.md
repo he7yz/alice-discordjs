@@ -4,8 +4,9 @@
   <img alt="Bob" src="https://cdn.discordapp.com/avatars/1416043684360622180/4238a5462d6adb241da8cc36d6218fc3.webp?size=1024" height="250" width="250"></img>
   <h2 align="center">Alice</h2>
   <h3 align="center">A discord.js Bot, tailor-made for MMUCraft Discord</h3>
-  <img alt="MMUCraft" src="https://cdn.discordapp.com/attachments/1415013676749946885/1493280107446665559/image.png?ex=69de64f9&is=69dd1379&hm=dbefbe642f2325112c3184e96b043e727b178ee97b1af35ce8f096f1e10646b9&" height ="1080" width="1920"></img>
+  <img alt="MMUCraft" src="https://github.com/user-attachments/assets/b01d0f95-6630-4155-83e1-6251f13285ea"></img>
   <br />
+  <p> Alice & Banner Art drewn by @MyonQ_Q on VGen </p>
 </div>
 
 # Features
