@@ -9,7 +9,7 @@
     "dotenv": "^17.2.2",
     "gif-encoder-2": "^1.0.5",
     "gif-frames": "^1.0.1",
-    "image-size": "^2.0.2",
+    "image-size": "^2.0.3",
     "jimp": "^1.6.1"
   }
 }
